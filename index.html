@@ -1,0 +1,1025 @@
+<!-- Author: Michael John Montano -->
+<!-- 1st-20th Sprint Update: N/A-->
+<!-- 21st Sprint Update: 01/10/2025 (Deadline: 01/19/2025)-->
+  <!-- 01/11/2025 Update: Resuming in July 3, 2024-->
+  <!-- 01/12/2025 Update: Resuming in September 2024 then finished December 2024; finished B2W top 3 ranking (redo full records ranking by purpose)--> 
+  <!-- 01/16/2025 Update: Resuming in HFW/TES/TRA top 3 ranking; fixed the 2024 Full Records rankings-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records > Xoss/Strava</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="symbol.png" type="image/x-icon">
+    <link rel="shortcut icon" href="symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles_gallery.css"> <!-- Link your CSS file -->
+</head>
+<body>
+<div class="center-container"><a href="https://mjamontano.github.io/Cycling_Journey/" class="home-button">Go back to "Cycling Journey"</a></div>
+<br><br>
+<header><div class="banner">Tabular Inventory</div><div class="content"><h1>Two Wheels, One Soul</h1><p>Freedom on every pedal stroke</p></div></header>
+<div class="full-img" id="fullImgBox"><img src="01032024 P1.png" id="fullImg"><span onclick="closeFullImg()">Close</span></div>
+<nav class="menu"><ul>
+  <li><a href="https://mjamontano.github.io/Xoss-Strava_Home/">Home</a></li>
+  <li>|||</li>
+  <li><a href="#">Tabular Inventory</a></li>
+  <li>|||</li>
+  <li><a href="#">Graphical Analysis</a></li>
+  <li>|||</li>
+  <li><a href="https://xoss.co/pages/brand-story?srsltid=AfmBOoq0Umc9BRETFJt9ncgNzQm_ZeCk20F4DgTXOtSVZAKvpZkEXbBW" target="_blank">About Xoss</a></li>
+  <li>|||</li>
+  <li><a href="https://www.strava.com/about" target="_blank">About Strava</a></li>
+</ul></nav>
+<br><br>
+<div class="logo">Legend</div>
+<table id="table1">
+  <tr>
+    <th>Badge</th>
+    <th>Place</th>
+    <th>Description</th>
+    <th>Award</th>
+    <th>Jersey</th>
+  </tr>
+  <tr>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>1st Place (General Classification)</td>
+    <td style="font-style: italic">This tagging is for being first place in general areas other than the average speed and max altitude. - <b>aka "Overall Award"</b></td>
+    <td><b style="font-style: italic">aka "maillot jaune":</b> The <b style="text-decoration: underline">yellow jersey</b> is the most coveted piece of kit in professional cycling. The wearer is a rider who has completed the race in the least amount of time, and as such tops the overall or general classification (GC) of the race.</td>
+    <td><img src="yellow_jersey.png" alt="Yellow Jersey"></td>
+  </tr>
+  <tr>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>1st Place (Speed)</td>
+    <td style="font-style: italic">This tagging is for being first place in terms of average speed maintained. - <b>aka "Sprinter's Award"</b></td>
+    <td><b style="font-style: italic">aka "maillot vert":</b> The <b style="text-decoration: underline">green jersey</b> relates to points awarded to riders according to the position they finish on each stage, with additional points for intermediate sprints during some stages also on offer. It is awarded to the rider with the most points. Sometimes it's a sprinter's game, sometimes more of an all-rounder.</td>
+    <td><img src="green_jersey.png" alt="Green Jersey"></td>
+  </tr>
+  <tr>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+    <td>1st Place (Altitude)</td>
+    <td style="font-style: italic">This tagging is for being first place in terms of max altitude reached. - <b>aka "Mountain King Award"</b></td>
+    <td><b style="font-style: italic">aka "maillot à pois rouges":</b> The <b style="text-decoration: underline">white-with-red-dots jersey</b> is given to the rider with the most mountains points (awarded to riders who manage to summit classified climbs first). Points vary depending on the category of each ascent, with more difficult climbs awarding more mountains points.</td>
+    <td><img src="red_jersey.png" alt="Red Jersey"></td>
+  </tr>
+  <tr>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>2nd Place Overall</td>
+    <td style="font-style: italic">This tagging is for being second place in general areas.</td>
+    <td rowspan="2" colspan="2">N/A</td>
+  </tr>
+  <tr>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>3rd Place Overall</td>
+    <td style="font-style: italic">This tagging is for being third place in general areas.</td>
+    </tr>
+</table>
+<br><br>
+<table id="table2">
+  <tr><th>Terminology [Acronym]</th><th>Description</th><th>Terminology [Acronym]</th><th>Description</th></tr>
+  <tr><td><b>Date [DAT]</b></td><td>The event to which I recorded my cycling data. <b>Format: MM/DD/YYYY</b></td><td><b>Calories Burned [CB]</b></td><td>The amount of calories burned on the duration of cycling which includes both movements in between two points or resting in place. <b>Unit: kcal</b></td></tr>
+  <tr><td><b>Distance [DIS]</b></td><td>The extent or amount of space between two points, typically the start and end of my cycling route. <b>Unit: km</b></td><td><b>Temperature [TMP]</b></td><td>The state of the atmosphere at a place and time as regards to heat, dryness, sunshine, wind, rain, etc. <b>Unit: Celsius</b></tr>
+  <tr><td><b>Moving Time [MT]</b></td><td>The time between the start and end of recording. This doesn't include the pauses (i.e during stoplight in the intersection). <b>Unit: HH:MM:SS</b></td><td><b>Average Speed [AS]</b></td><td>The average distance covered in a given time. <b>Unit: kph</b></td></tr>
+  <tr><td><b>Maximum Speed [MS]</b></td><td>The maximum distance covered in a given time. <b>Unit: kph</b></td><td><b>Elevation [ELV]</b></td><td>Total amount you will climb in a day. <b>Unit: m</b></td></tr>
+  <tr><td><b>Purpose [PUR]</b></td><td>The objective of recording my cycling data.</td><td><b>Map [MAP]</b></td><td>A diagrammatic representation of an area of land showing physical features, cities, roads, etc of my cycling route.</td></tr>
+</table>
+<br><br>
+<div class="logo">Leaderboard</div>
+<div class="logo">Purpose: Bike to Work</div>
+<table id="table3">
+  <tr>
+    <th>Rank (Speed)</th>
+    <th>Average Speed</th>
+    <th>Maximum Speed</th>
+    <th>Rank (Altitude)</th>
+    <th>Elevation</th>
+    <th>Rank (GC)</th>
+    <th>Calories Burned</th>
+    <th>Distance</th>
+    <th>Temperature</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>18 kph (Jun 26, 2024)</td>
+    <td>39.8 kph (Aug 14, 2024)</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+    <td>125 m (Aug 21, 2024)</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>449 kcal (Aug 21, 2024)</td>
+    <td>16.24 km (Aug 21, 2024)</td>
+    <td>46 Celsius (Aug 21, 2024)</td>
+    <td>00:25:04 (Jul 3, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>17.7 kph (Aug 21, 2024)</td>
+    <td>38.9 kph (Jul 17. 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>103 m (Sep 25, 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>332 kcal (Oct 2, 2024)</td>
+    <td>12.07 km (Oct 2, 2024)</td>
+    <td>43 Celsius (Sep 25, 2024)</td>
+    <td>00:26:08 (Jun 26, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>17.5 kph (Jul 17, 2024)</td>
+    <td>37.4 kph (Aug 21, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>100 m (2024: Jul 17, Jul 31, Aug 7)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>296 kcal (Sep 18, 2024)</td>
+    <td>11.03 km (Sep 18, 2024)</td>
+    <td>42 Celsius (2024: Oct 2, Oct 9)</td>
+    <td>00:28:56 (Jul 10, 2024)</td>
+</table>
+<br><br>
+<div class="logo">Purpose: Home from Work</div>
+<table id="table4">
+  <tr>
+    <th>Rank (Speed)</th>
+    <th>Average Speed</th>
+    <th>Maximum Speed</th>
+    <th>Rank (Altitude)</th>
+    <th>Elevation</th>
+    <th>Rank (GC)</th>
+    <th>Calories Burned</th>
+    <th>Distance</th>
+    <th>Temperature</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>16.8 kph (Jun 17, 2024)</td>
+    <td>40.5 kph (2024: Aug 7, Oct 2)</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+    <td>40 m (2024: Aug 7, Aug 14)</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>273 kcal (2024: Sep 25, Oct 2)</td>
+    <td>10.11 km (Sep 25, 2024)</td>
+    <td>33 Celsius (2024: Jul 3, Sep 25)</td>
+    <td>00:15:37 (Jul 10, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>15.7 kph (2024: Jul 10, Aug 7)</td>
+    <td>N/A</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>N/A</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>N/A</td>
+    <td>6.55 km (Aug 21, 2024)</td>
+    <td>N/A</td>
+    <td>00:16:09 (Jun 26, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>N/A</td>
+    <td>39.7 kph (Aug 21, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>39 m (Jul 17, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>181 kcal (Jul 17, 2024)</td>
+    <td>6.5 km (Sep 18, 2024)</td>
+    <td>32 Celsius (2024: Jul 10, Aug 14, Aug 21, Oct 2)</td>
+    <td>00:19:09 (Oct 9, 2024)</td>
+</table>
+<br><br>
+<div class="logo">Purpose: Testing</div>
+<table id="table5">
+  <tr>
+    <th>Rank (Speed)</th>
+    <th>Average Speed</th>
+    <th>Maximum Speed</th>
+    <th>Rank (Altitude)</th>
+    <th>Elevation</th>
+    <th>Rank (GC)</th>
+    <th>Calories Burned</th>
+    <th>Distance</th>
+    <th>Temperature</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>22 kph (Jun 23, 2024)</td>
+    <td>37.9 kph (Jun 23, 2024)</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+    <td>30 m (Jun 23, 2024)</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>225 kcal (Dec 31, 2024)</td>
+    <td>7.8 km (Dec 31, 2024)</td>
+    <td>33 Celsius (Jun 23, 2024)</td>
+    <td>00:18:21 (Jun 23, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>19.9 kph (Dec 31, 2024)</td>
+    <td>35.9 kph (Oct 3, 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>19 m (Oct 3, 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>215 kcal (Oct 3, 2024)</td>
+    <td>7.64 km (Oct 3, 2024)</td>
+    <td>32 Celsius (Oct 3, 2024)</td>
+    <td>00:23:35 (Dec 31, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>15.2 kph (Oct 3, 2024)</td>
+    <td>33.3 kph (Dec 31, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>17 m (Dec 31, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>201 kcal (Jun 23, 2024)</td>
+    <td>6.72 km (Jun 23, 2024)</td>
+    <td>29 Celsius (Dec 31, 2024)</td>
+    <td>00:30:12 (Oct 3, 2024)</td>
+</table>
+<br><br>
+<div class="logo">Purpose: Training</div>
+<table id="table6">
+  <tr>
+    <th>Rank (Speed)</th>
+    <th>Average Speed</th>
+    <th>Maximum Speed</th>
+    <th>Rank (Altitude)</th>
+    <th>Elevation</th>
+    <th>Rank (GC)</th>
+    <th>Calories Burned</th>
+    <th>Distance</th>
+    <th>Temperature</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>19.8 kph (Aug 23, 2024)</td>
+    <td>43.3 kph (Jul 2, 2024)</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+    <td>794 m (Sep 17, 2024)</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>2397 kcal (Aug 23, 2024)</td>
+    <td>84.8 km (Aug 23, 2024)</td>
+    <td>36 Celsius (Jul 2, 2024)</td>
+    <td>03:28:08 (Sep 17, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>19.4 kph (Jul 9, 2024)</td>
+    <td>43.1 kph (Jul 9, 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>633 m (Jul 2, 2024)</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>2261 kcal (Jul 30, 2024)</td>
+    <td>80.8 km (Jul 30, 2024)</td>
+    <td>35 Celsius (2024: Jul 30, Aug 23)</td>
+    <td>03:36:12 (Jun 24, 2024)</td>
+  </tr>
+  <tr>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>18.4 kph (Jul 2, 2024)</td>
+    <td>42.5 kph (Aug 23, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>544 m (Aug 23, 2024)</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>2082 kcal (Jul 9, 2024)</td>
+    <td>73.11 km (Jul 9, 2024)</td>
+    <td>N/A</td>
+    <td>03:45:39 (Jul 9, 2024)</td>
+</table>
+<br><br>
+<div class="logo">Full Records</div>
+<div class="logo">Year 2024</div>
+<table id="table7">
+  <tr>
+      <th>MAP</th>
+      <th>CHARTS</th>
+      <th>RECAP</th>
+      <th>DAT</th>
+      <th>CB</th>
+      <th>DIS</th>
+      <th>TMP</th>
+      <th>MT</th>
+      <th>AS</th>
+      <th>MS</th>
+      <th>ELV</th>
+      <th>PUR</th>
+      <th>R-CB</th>
+      <th>R-DIS</th>
+      <th>R-TMP</th>
+      <th>R-MT</th>
+      <th>R-AS</th>
+      <th>R-MS</th>
+      <th>R-ELV</th>
+  </tr>
+  <tr>
+      <td><div class="gallery"><img src="06232024.png" onclick="openFullImg(this.src)" alt="06232024"></div></td>
+      <td><a href="06232024_c1.jpg" target="_blank">Elevation</a><br><a href="06232024_c2.jpg" target="_blank">Speed</a><br><a href="06232024_c3.jpg" target="_blank">Temperature</a></td>
+      <td><a href="#" target="_blank">Click here</a></td>
+      <td>06/23/2024</td>
+      <td>201</td>
+      <td>6.72</td>
+      <td>33</td>
+      <td>00:18:21</td>
+      <td>22</td>
+      <td>37.9</td>
+      <td>30</td>
+      <td>Testing</td>
+      <td><img src="3rd.png" alt="3rd place"></td>
+      <td><img src="3rd.png" alt="3rd place"></td>
+      <td><img src="1st.png" alt="1st place"></td>
+      <td><img src="1st.png" alt="1st place"></td>
+      <td><img src="1stspeed.png" alt="1st place in speed"></td>
+      <td><img src="1stspeed.png" alt="1st place in speed"></td>
+      <td><img src="1stalt.png" alt="1st place in altitude"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="06242024.png" onclick="openFullImg(this.src)" alt="06242024"></div></td>
+    <td><a href="06242024_c1.jpg" target="_blank">Elevation</a><br><a href="06242024_c2.jpg" target="_blank">Speed</a><br><a href="06242024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>06/24/2024</td>
+    <td>1853</td>
+    <td>65.64</td>
+    <td>34</td>
+    <td>03:36:12</td>
+    <td>18.2</td>
+    <td>41.3</td>
+    <td>443</td>
+    <td>Training</td>
+    <td>5th</td>
+    <td>5th</td>
+    <td>4th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>4th</td>
+    <td>4th</td>
+    <td>6th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="06262024.png" onclick="openFullImg(this.src)" alt="06262024"></div></td>
+    <td><a href="06262024_c1.jpg" target="_blank">Elevation</a><br><a href="06262024_c2.jpg" target="_blank">Speed</a><br><a href="06262024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>06/26/2024</td>
+    <td>214</td>
+    <td>7.85</td>
+    <td>34</td>
+    <td>00:26:08</td>
+    <td>18.0</td>
+    <td>33.6</td>
+    <td>85</td>
+    <td>Bike to Work</td>
+    <td>11th</td>
+    <td>11th</td>
+    <td>11th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>5th</td>
+    <td>12th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="06262024_2.png" onclick="openFullImg(this.src)" alt="06262024_2"></div></td>
+    <td><a href="06262024_2_c1.jpg" target="_blank">Elevation</a><br><a href="06262024_2_c2.jpg" target="_blank">Speed</a><br><a href="06262024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>06/26/2024</td>
+    <td>107</td>
+    <td>4.01</td>
+    <td>28</td>
+    <td>00:16:09</td>
+    <td>14.9</td>
+    <td>37.2</td>
+    <td>24</td>
+    <td>Home from Work</td>
+    <td>12th</td>
+    <td>12th</td>
+    <td>11th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>5th</td>
+    <td>7th</td>
+    <td>11th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07022024.png" onclick="openFullImg(this.src)" alt="07022024"></div></td>
+    <td><a href="07022024_c1.jpg" target="_blank">Elevation</a><br><a href="07022024_c2.jpg" target="_blank">Speed</a><br><a href="07022024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/02/2024</td>
+    <td>2015</td>
+    <td>71.44</td>
+    <td>36</td>
+    <td>03:52:59</td>
+    <td>18.4</td>
+    <td>43.3</td>
+    <td>633</td>
+    <td>Training</td>
+    <td>4th</td>
+    <td>4th</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>4th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07032024.png" onclick="openFullImg(this.src)" alt="07032024"></div></td>
+    <td><a href="07032024_c1.jpg" target="_blank">Elevation</a><br><a href="07032024_c2.jpg" target="_blank">Speed</a><br><a href="07032024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/03/2024</td>
+    <td>174</td>
+    <td>6.50</td>
+    <td>41</td>
+    <td>00:25:04</td>
+    <td>15.6</td>
+    <td>31.1</td>
+    <td>67</td>
+    <td>Bike to Work</td>
+    <td>12th</td>
+    <td>12th</td>
+    <td>5th</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>9th</td>
+    <td>10th</td>
+    <td>11th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07032024_2.png" onclick="openFullImg(this.src)" alt="07032024_2"></div></td>
+    <td><a href="07032024_2_c1.jpg" target="_blank">Elevation</a><br><a href="07032024_2_c2.jpg" target="_blank">Speed</a><br><a href="07032024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/03/2024</td>
+    <td>173</td>
+    <td>6.46</td>
+    <td>33</td>
+    <td>00:26:25</td>
+    <td>14.7</td>
+    <td>35.2</td>
+    <td>38</td>
+    <td>Home from Work</td>
+    <td>9th</td>
+    <td>5th</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>8th</td>
+    <td>7th</td>
+    <td>10th</td>
+    <td>4th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07092024.png" onclick="openFullImg(this.src)" alt="07092024"></div></td>
+    <td><a href="07092024_c1.jpg" target="_blank">Elevation</a><br><a href="07092024_c2.jpg" target="_blank">Speed</a><br><a href="07092024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/09/2024</td>
+    <td>2082</td>
+    <td>73.11</td>
+    <td>33</td>
+    <td>03:45:39</td>
+    <td>19.4</td>
+    <td>43.1</td>
+    <td>465</td>
+    <td>Training</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>5th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>5th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07102024.png" onclick="openFullImg(this.src)" alt="07102024"></div></td>
+    <td><a href="07102024_c1.jpg" target="_blank">Elevation</a><br><a href="07102024_c2.jpg" target="_blank">Speed</a><br><a href="07102024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/10/2024</td>
+    <td>219</td>
+    <td>8.11</td>
+    <td>38</td>
+    <td>00:28:56</td>
+    <td>16.8</td>
+    <td>33.1</td>
+    <td>91</td>
+    <td>Bike to Work</td>
+    <td>10th</td>
+    <td>10th</td>
+    <td>9th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>5th</td>
+    <td>8th</td>
+    <td>8th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07102024_2.png" onclick="openFullImg(this.src)" alt="07102024_2"></div></td>
+    <td><a href="07102024_2_c1.jpg" target="_blank">Elevation</a><br><a href="07102024_2_c2.jpg" target="_blank">Speed</a><br><a href="07102024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/10/2024</td>
+    <td>111</td>
+    <td>4.09</td>
+    <td>32</td>
+    <td>00:15:37</td>
+    <td>15.7</td>
+    <td>35.7</td>
+    <td>24</td>
+    <td>Home from Work</td>
+    <td>11th</td>
+    <td>11th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>8th</td>
+    <td>11th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07172024.png" onclick="openFullImg(this.src)" alt="07172024"></div></td>
+    <td><a href="07172024_c1.jpg" target="_blank">Elevation</a><br><a href="07172024_c2.jpg" target="_blank">Speed</a><br><a href="07172024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/17/2024</td>
+    <td>267</td>
+    <td>9.78</td>
+    <td>36</td>
+    <td>00:33:29</td>
+    <td>17.5</td>
+    <td>38.9</td>
+    <td>100</td>
+    <td>Bike to Work</td>
+    <td>4th</td>
+    <td>5th</td>
+    <td>10th</td>
+    <td>5th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07172024_2.png" onclick="openFullImg(this.src)" alt="07172024_2"></div></td>
+    <td><a href="07172024_2_c1.jpg" target="_blank">Elevation</a><br><a href="07172024_2_c2.jpg" target="_blank">Speed</a><br><a href="07172024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/17/2024</td>
+    <td>181</td>
+    <td>6.35</td>
+    <td>30</td>
+    <td>00:22:45</td>
+    <td>16.8</td>
+    <td>38.4</td>
+    <td>39</td>
+    <td>Home from Work</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>8th</td>
+    <td>10th</td>
+    <td>4th</td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>4th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07302024.png" onclick="openFullImg(this.src)" alt="07302024"></div></td>
+    <td><a href="07302024_c1.jpg" target="_blank">Elevation</a><br><a href="07302024_c2.jpg" target="_blank">Speed</a><br><a href="07302024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/30/2024</td>
+    <td>2261</td>
+    <td>80.80</td>
+    <td>35</td>
+    <td>04:43:48</td>
+    <td>17.1</td>
+    <td>36.2</td>
+    <td>532</td>
+    <td>Training</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>6th</td>
+    <td>5th</td>
+    <td>6th</td>
+    <td>4th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07312024.png" onclick="openFullImg(this.src)" alt="07312024"></div></td>
+    <td><a href="07312024_c1.jpg" target="_blank">Elevation</a><br><a href="07312024_c2.jpg" target="_blank">Speed</a><br><a href="07312024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/31/2024</td>
+    <td>254</td>
+    <td>9.51</td>
+    <td>40</td>
+    <td>00:36:27</td>
+    <td>15.7</td>
+    <td>32.0</td>
+    <td>100</td>
+    <td>Bike to Work</td>
+    <td>9th</td>
+    <td>7th</td>
+    <td>8th</td>
+    <td>7th</td>
+    <td>8th</td>
+    <td>9th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="07312024_2.png" onclick="openFullImg(this.src)" alt="07312024_2"></div></td>
+    <td><a href="07312024_2_c1.jpg" target="_blank">Elevation</a><br><a href="07312024_2_c2.jpg" target="_blank">Speed</a><br><a href="07312024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>07/31/2024</td>
+    <td>175</td>
+    <td>6.42</td>
+    <td>31</td>
+    <td>00:28:19</td>
+    <td>13.6</td>
+    <td>34.1</td>
+    <td>36</td>
+    <td>Home from Work</td>
+    <td>5th</td>
+    <td>6th</td>
+    <td>7th</td>
+    <td>11th</td>
+    <td>11th</td>
+    <td>12th</td>
+    <td>9th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08072024.png" onclick="openFullImg(this.src)" alt="08072024"></div></td>
+    <td><a href="08072024_c1.jpg" target="_blank">Elevation</a><br><a href="08072024_c2.jpg" target="_blank">Speed</a><br><a href="08072024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/07/2024</td>
+    <td>260</td>
+    <td>9.59</td>
+    <td>41</td>
+    <td>00:34:13</td>
+    <td>16.8</td>
+    <td>33.5</td>
+    <td>100</td>
+    <td>Bike to Work</td>
+    <td>6th</td>
+    <td>6th</td>
+    <td>5th</td>
+    <td>6th</td>
+    <td>5th</td>
+    <td>6th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08072024_2.png" onclick="openFullImg(this.src)" alt="08072024_2"></div></td>
+    <td><a href="08072024_2_c1.jpg" target="_blank">Elevation</a><br><a href="08072024_2_c2.jpg" target="_blank">Speed</a><br><a href="08072024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/07/2024</td>
+    <td>178</td>
+    <td>6.23</td>
+    <td>31</td>
+    <td>00:23:47</td>
+    <td>15.7</td>
+    <td>40.5</td>
+    <td>40</td>
+    <td>Home from Work</td>
+    <td>4th</td>
+    <td>9th</td>
+    <td>7th</td>
+    <td>5th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08142024.png" onclick="openFullImg(this.src)" alt="08142024"></div></td>
+    <td><a href="08142024_c1.jpg" target="_blank">Elevation</a><br><a href="08142024_c2.jpg" target="_blank">Speed</a><br><a href="08142024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/14/2024</td>
+    <td>262</td>
+    <td>9.20</td>
+    <td>41</td>
+    <td>00:32:06</td>
+    <td>17.2</td>
+    <td>39.8</td>
+    <td>99</td>
+    <td>Bike to Work</td>
+    <td>5th</td>
+    <td>9th</td>
+    <td>5th</td>
+    <td>4th</td>
+    <td>4th</td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>6th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08142024_2.png" onclick="openFullImg(this.src)" alt="08142024_2"></div></td>
+    <td><a href="08142024_2_c1.jpg" target="_blank">Elevation</a><br><a href="08142024_2_c2.jpg" target="_blank">Speed</a><br><a href="08142024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/14/2024</td>
+    <td>174</td>
+    <td>6.39</td>
+    <td>32</td>
+    <td>00:24:50</td>
+    <td>15.4</td>
+    <td>38.1</td>
+    <td>40</td>
+    <td>Home from Work</td>
+    <td>6th</td>
+    <td>7th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>6th</td>
+    <td>4th</td>
+    <td>5th</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08212024.png" onclick="openFullImg(this.src)" alt="08212024"></div></td>
+    <td><a href="08212024_c1.jpg" target="_blank">Elevation</a><br><a href="08212024_c2.jpg" target="_blank">Speed</a><br><a href="08212024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/21/2024</td>
+    <td>449</td>
+    <td>16.24</td>
+    <td>46</td>
+    <td>00:54:57</td>
+    <td>17.7</td>
+    <td>37.4</td>
+    <td>125</td>
+    <td>Bike to Work</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>12th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08212024_2.png" onclick="openFullImg(this.src)" alt="08212024_2"></div></td>
+    <td><a href="08212024_2_c1.jpg" target="_blank">Elevation</a><br><a href="08212024_2_c2.jpg" target="_blank">Speed</a><br><a href="08212024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/21/2024</td>
+    <td>174</td>
+    <td>6.55</td>
+    <td>32</td>
+    <td>00:27:13</td>
+    <td>14.4</td>
+    <td>39.7</td>
+    <td>37</td>
+    <td>Home from Work</td>
+    <td>6th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>10th</td>
+    <td>9th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>7th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="08232024.png" onclick="openFullImg(this.src)" alt="08232024"></div></td>
+    <td><a href="08232024_c1.jpg" target="_blank">Elevation</a><br><a href="08232024_c2.jpg" target="_blank">Speed</a><br><a href="08232024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>08/23/2024</td>
+    <td>2397</td>
+    <td>84.80</td>
+    <td>35</td>
+    <td>04:17:00</td>
+    <td>19.8</td>
+    <td>42.5</td>
+    <td>544</td>
+    <td>Training</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>5th</td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="09172024.png" onclick="openFullImg(this.src)" alt="09172024"></div></td>
+    <td><a href="09172024_c1.jpg" target="_blank">Elevation</a><br><a href="09172024_c2.jpg" target="_blank">Speed</a><br><a href="09172024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>09/17/2024</td>
+    <td>1559</td>
+    <td>55.98</td>
+    <td>32</td>
+    <td>03:28:08</td>
+    <td>16.1</td>
+    <td>41.2</td>
+    <td>794</td>
+    <td>Training</td>
+    <td>6th</td>
+    <td>6th</td>
+    <td>6th</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>6th</td>
+    <td>5th</td>
+    <td><img src="1stalt.png" alt="1st place in altitude"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="09182024.png" onclick="openFullImg(this.src)" alt="09182024"></div></td>
+    <td><a href="09182024_c1.jpg" target="_blank">Elevation</a><br><a href="09182024_c2.jpg" target="_blank">Speed</a><br><a href="09182024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>09/18/2024</td>
+    <td>296</td>
+    <td>11.03</td>
+    <td>31</td>
+    <td>00:42:39</td>
+    <td>15.5</td>
+    <td>33.3</td>
+    <td>73</td>
+    <td>Bike to Work</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>12th</td>
+    <td>10th</td>
+    <td>10th</td>
+    <td>7th</td>
+    <td>9th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="09182024_2.png" onclick="openFullImg(this.src)" alt="09182024_2"></div></td>
+    <td><a href="09182024_2_c1.jpg" target="_blank">Elevation</a><br><a href="09182024_2_c2.jpg" target="_blank">Speed</a><br><a href="09182024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>09/18/2024</td>
+    <td>174</td>
+    <td>6.50</td>
+    <td>27</td>
+    <td>00:26:48</td>
+    <td>14.6</td>
+    <td>34.4</td>
+    <td>38</td>
+    <td>Home from Work</td>
+    <td>6th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>12th</td>
+    <td>9th</td>
+    <td>8th</td>
+    <td>11th</td>
+    <td>4th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="09252024.png" onclick="openFullImg(this.src)" alt="09252024"></div></td>
+    <td><a href="09252024_c1.jpg" target="_blank">Elevation</a><br><a href="09252024_c2.jpg" target="_blank">Speed</a><br><a href="09252024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>09/25/2024</td>
+    <td>257</td>
+    <td>9.80</td>
+    <td>43</td>
+    <td>00:38:16</td>
+    <td>15.4</td>
+    <td>28.7</td>
+    <td>103</td>
+    <td>Bike to Work</td>
+    <td>7th</td>
+    <td>4th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td>9th</td>
+    <td>11th</td>
+    <td>12th</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="09252024_2.png" onclick="openFullImg(this.src)" alt="09252024_2"></div></td>
+    <td><a href="09252024_2_c1.jpg" target="_blank">Elevation</a><br><a href="09252024_2_c2.jpg" target="_blank">Speed</a><br><a href="09252024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>09/25/2024</td>
+    <td>273</td>
+    <td>10.11</td>
+    <td>33</td>
+    <td>00:42:03</td>
+    <td>14.4</td>
+    <td>37.3</td>
+    <td>37</td>
+    <td>Home from Work</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>12th</td>
+    <td>9th</td>
+    <td>6th</td>
+    <td>7th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="10022024.png" onclick="openFullImg(this.src)" alt="10022024"></div></td>
+    <td><a href="10022024_c1.jpg" target="_blank">Elevation</a><br><a href="10022024_c2.jpg" target="_blank">Speed</a><br><a href="10022024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>10/02/2024</td>
+    <td>332</td>
+    <td>12.07</td>
+    <td>42</td>
+    <td>00:44:30</td>
+    <td>16.3</td>
+    <td>30.4</td>
+    <td>99</td>
+    <td>Bike to Work</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>11th</td>
+    <td>7th</td>
+    <td>11th</td>
+    <td>6th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="10022024_2.png" onclick="openFullImg(this.src)" alt="10022024_2"></div></td>
+    <td><a href="10022024_2_c1.jpg" target="_blank">Elevation</a><br><a href="10022024_2_c2.jpg" target="_blank">Speed</a><br><a href="10022024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>10/02/2024</td>
+    <td>183</td>
+    <td>6.49</td>
+    <td>32</td>
+    <td>00:26:22</td>
+    <td>14.8</td>
+    <td>40.5</td>
+    <td>38</td>
+    <td>Home from Work</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td>4th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>7th</td>
+    <td>6th</td>
+    <td><img src="1stspeed.png" alt="1st place in speed"></td>
+    <td>4th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="10032024.png" onclick="openFullImg(this.src)" alt="10032024"></div></td>
+    <td><a href="10032024_c1.jpg" target="_blank">Elevation</a><br><a href="10032024_c2.jpg" target="_blank">Speed</a><br><a href="10032024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>10/03/2024</td>
+    <td>215</td>
+    <td>7.64</td>
+    <td>32</td>
+    <td>00:30:12</td>
+    <td>15.2</td>
+    <td>35.9</td>
+    <td>19</td>
+    <td>Testing</td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="10092024.png" onclick="openFullImg(this.src)" alt="10092024"></div></td>
+    <td><a href="10092024_c1.jpg" target="_blank">Elevation</a><br><a href="10092024_c2.jpg" target="_blank">Speed</a><br><a href="10092024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>10/09/2024</td>
+    <td>257</td>
+    <td>9.46</td>
+    <td>42</td>
+    <td>00:36:53</td>
+    <td>15.4</td>
+    <td>35.0</td>
+    <td>69</td>
+    <td>Bike to Work</td>
+    <td>7th</td>
+    <td>8th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>8th</td>
+    <td>11th</td>
+    <td>4th</td>
+    <td>10th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="10092024_2.png" onclick="openFullImg(this.src)" alt="10092024_2"></div></td>
+    <td><a href="10092024_2_c1.jpg" target="_blank">Elevation</a><br><a href="10092024_2_c2.jpg" target="_blank">Speed</a><br><a href="10092024_2_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>10/09/2024</td>
+    <td>117</td>
+    <td>4.32</td>
+    <td>31</td>
+    <td>00:19:09</td>
+    <td>13.5</td>
+    <td>35.6</td>
+    <td>26</td>
+    <td>Home from Work</td>
+    <td>10th</td>
+    <td>10th</td>
+    <td>7th</td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td>12th</td>
+    <td>9th</td>
+    <td>10th</td>
+  </tr>
+  <tr>
+    <td><div class="gallery"><img src="12312024.png" onclick="openFullImg(this.src)" alt="12312024"></div></td>
+    <td><a href="12312024_c1.jpg" target="_blank">Elevation</a><br><a href="12312024_c2.jpg" target="_blank">Speed</a><br><a href="12312024_c3.jpg" target="_blank">Temperature</a></td>
+    <td><a href="#" target="_blank">Click here</a></td>
+    <td>12/31/2024</td>
+    <td>225</td>
+    <td>7.80</td>
+    <td>29</td>
+    <td>00:23:35</td>
+    <td>19.9</td>
+    <td>33.3</td>
+    <td>17</td>
+    <td>Testing</td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="1st.png" alt="1st place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="2nd.png" alt="2nd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+    <td><img src="3rd.png" alt="3rd place"></td>
+  </tr>
+</table>
+<script>
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+  
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg(){
+    fullImgBox.style.display = "none";
+  }
+</script>
+</body>
+</html>
